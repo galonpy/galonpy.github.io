@@ -7,7 +7,7 @@ nav: False
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
 
 news: False  # includes a list of news items
@@ -20,6 +20,11 @@ social: true  # includes social icons at the bottom of the page
 
 Data Scientist 📈 and Coffee Enthousiast ☕
 
+Strong at leading and innovating core machine learning product improvements that have measurable value for customers. Expert in AI model evaluation.
+
+
 Master of Applied Data Science 🎓📜
 
-Data Science is my passion and my career path. I am **fascinated** by the power of the tools that data scientists have to discover patterns, predict unknowns, persuade audiences, and create positive changes in the world. I am also motivated by the opportunity to explore new kinds of data and work with talented people.
+Data Science and machine learning are my intellectual passion and my career path. I am **fascinated** by the power of the tools that data scientists have to discover patterns, predict unknowns, persuade audiences, and create positive changes in the world. Harnessing 
+AI tools like Claude Code and Codex with precision is a core strength of mine that helps me 
+to accelerate the rate of innovation at enterprises.

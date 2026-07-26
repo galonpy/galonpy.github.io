@@ -8,6 +8,8 @@ nav_order: 2
 ---
 
 **YouTube Recommendation Website** [Code](https://github.com/galonpy/youtube_llm) | [Article](https://medium.com/@gabrielalon257/youtube-filtering-capstone-67f755fb6dca) | [Video](https://drive.google.com/file/d/10EIKd1QhmoLsq2TeQgsYkP51RMODiRMc/view)
+First Place Project: Led a team to build a YouTube video browser with enhanced AI-driven content filters (BERT, ChatGPT). Created the ML architecture, user experience, and demo. Received a $5,000 scholarship prize.
+
 This is a YouTube recommendation website that plays real videos and makes recommendations
 using LLMs like BERT and ChatGPT based on a user's stated preferences.
 

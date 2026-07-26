@@ -18,12 +18,13 @@ social: true  # includes social icons at the bottom of the page
 
 **Gabriel Alon** 
 
-Data Scientist 📈 and Coffee Enthousiast ☕
+Data Scientist 📈 and Coffee Enthusiast ☕
 
 Strong at leading and innovating core machine learning product improvements that have measurable value for customers. Expert in AI model evaluation.
 
 
-Master of Applied Data Science 🎓📜
+Master of Applied Data Science 🎓
+
 
 Data Science and machine learning are my intellectual passion and my career path. I am **fascinated** by the power of the tools that data scientists have to discover patterns, predict unknowns, persuade audiences, and create positive changes in the world. Harnessing 
 AI tools like Claude Code and Codex with precision is a core strength of mine that helps me 

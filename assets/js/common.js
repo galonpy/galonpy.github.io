@@ -1,12 +1,13 @@
 $(document).ready(function() {
-  // add toggle functionality to abstract and bibtex buttons
-  $('a.abstract').click(function() {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass('open');
-  });
-  $('a.bibtex').click(function() {
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass('open');
+  // add toggle functionality to paper highlights buttons
+  $('.abstract-toggle').click(function() {
+    const $toggle = $(this);
+    const $entry = $toggle.parent().parent();
+    const isOpen = $entry.find(".abstract.hidden").toggleClass('open').hasClass('open');
+
+    $toggle.toggleClass('open', isOpen);
+    $toggle.attr('aria-expanded', isOpen);
+    $toggle.attr('aria-label', isOpen ? 'Hide paper highlights' : 'Show paper highlights');
   });
   $('a').removeClass('waves-effect waves-light');
 
@@ -46,4 +47,3 @@ $(document).ready(function() {
     }
   });
 });
-

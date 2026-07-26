@@ -1,0 +1,35 @@
+llmattacks:
+  companies:
+    - name: Google
+      url: https://research.google/pubs/identifying-and-mitigating-the-security-risks-of-generative-ai/
+    - name: Google DeepMind
+      url: https://arxiv.org/abs/2510.08413
+    - name: Microsoft
+      url: https://arxiv.org/abs/2508.02872
+    - name: IBM Research
+      url: https://aclanthology.org/2025.findings-naacl.123/
+    - name: Bloomberg
+      url: https://openreview.net/forum?id=sSAp8ITBpC
+    - name: Sony AI
+      url: https://jailbreakbench.github.io/
+  universities:
+    - name: University of Pennsylvania
+      url: https://jailbreaking-llms.github.io/
+    - name: Stanford
+      url: https://research.google/pubs/identifying-and-mitigating-the-security-risks-of-generative-ai/
+    - name: Carnegie Mellon
+      url: https://openreview.net/forum?id=IbIB8SBKFV
+    - name: MIT
+      url: https://openreview.net/forum?id=XHP3t1AUp3
+    - name: Harvard
+      url: https://openreview.net/forum?id=sSAp8ITBpC
+    - name: UC Berkeley
+      url: https://openreview.net/forum?id=Y841BRW9rY
+    - name: UCLA
+      url: https://aclanthology.org/2024.findings-acl.948/
+    - name: University of Chicago
+      url: https://openreview.net/forum?id=Y841BRW9rY
+    - name: UIUC
+      url: https://openreview.net/forum?id=Y841BRW9rY
+    - name: ETH Zurich
+      url: https://jailbreakbench.github.io/

@@ -1,35 +1,51 @@
 llmattacks:
   companies:
     - name: Google
-      url: https://research.google/pubs/identifying-and-mitigating-the-security-risks-of-generative-ai/
+      paper: Identifying and Mitigating the Security Risks of Generative AI
+      url: https://arxiv.org/pdf/2308.14840#page=24
     - name: Google DeepMind
-      url: https://arxiv.org/abs/2510.08413
+      paper: Prompts Generalize with Low Data
+      url: https://arxiv.org/pdf/2510.08413#page=4
     - name: Microsoft
-      url: https://arxiv.org/abs/2508.02872
+      paper: "Highlight & Summarize: RAG without the Jailbreaks"
+      url: https://arxiv.org/pdf/2508.02872#page=14
     - name: IBM Research
-      url: https://aclanthology.org/2025.findings-naacl.123/
+      paper: "Attention Tracker: Detecting Prompt Injection Attacks in LLMs"
+      url: https://aclanthology.org/2025.findings-naacl.123.pdf#page=3
     - name: Bloomberg
-      url: https://openreview.net/forum?id=sSAp8ITBpC
+      paper: Operationalizing a Threat Model for Red-Teaming LLMs
+      url: https://arxiv.org/pdf/2407.14937#page=32
     - name: Sony AI
-      url: https://jailbreakbench.github.io/
+      paper: "JailbreakBench: An Open Robustness Benchmark"
+      url: https://proceedings.neurips.cc/paper_files/paper/2024/file/63092d79154adebd7305dfd498cbff70-Paper-Datasets_and_Benchmarks_Track.pdf#page=3
   universities:
     - name: University of Pennsylvania
-      url: https://jailbreaking-llms.github.io/
+      paper: Jailbreaking Black Box LLMs in Twenty Queries
+      url: https://arxiv.org/pdf/2310.08419#page=12
     - name: Stanford
-      url: https://research.google/pubs/identifying-and-mitigating-the-security-risks-of-generative-ai/
+      paper: Identifying and Mitigating the Security Risks of Generative AI
+      url: https://arxiv.org/pdf/2308.14840#page=24
     - name: Carnegie Mellon
-      url: https://openreview.net/forum?id=IbIB8SBKFV
+      paper: Improving Alignment and Robustness with Circuit Breakers
+      url: https://arxiv.org/pdf/2406.04313#page=11
     - name: MIT
-      url: https://openreview.net/forum?id=XHP3t1AUp3
+      paper: A Theoretical Understanding of Self-Correction
+      url: https://arxiv.org/pdf/2405.18634#page=11
     - name: Harvard
-      url: https://openreview.net/forum?id=sSAp8ITBpC
+      paper: Operationalizing a Threat Model for Red-Teaming LLMs
+      url: https://arxiv.org/pdf/2407.14937#page=32
     - name: UC Berkeley
-      url: https://openreview.net/forum?id=Y841BRW9rY
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=10
     - name: UCLA
-      url: https://aclanthology.org/2024.findings-acl.948/
+      paper: Defending LLMs Against Jailbreaking via Backtranslation
+      url: https://aclanthology.org/2024.findings-acl.948.pdf#page=2
     - name: University of Chicago
-      url: https://openreview.net/forum?id=Y841BRW9rY
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=10
     - name: UIUC
-      url: https://openreview.net/forum?id=Y841BRW9rY
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=10
     - name: ETH Zurich
-      url: https://jailbreakbench.github.io/
+      paper: "JailbreakBench: An Open Robustness Benchmark"
+      url: https://proceedings.neurips.cc/paper_files/paper/2024/file/63092d79154adebd7305dfd498cbff70-Paper-Datasets_and_Benchmarks_Track.pdf#page=3

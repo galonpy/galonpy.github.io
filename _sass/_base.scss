@@ -695,8 +695,15 @@ footer.sticky-bottom {
           }
         }
 
+        .research-use-note {
+          color: var(--global-text-color-light);
+          font-size: 0.7rem;
+          line-height: 1.4;
+          margin: -0.15rem 0 0.1rem;
+          text-align: left;
+        }
+
         .research-use-row {
-          align-items: baseline;
           display: grid;
           gap: 0.35rem 0.65rem;
           grid-template-columns: 5.25rem minmax(0, 1fr);
@@ -711,27 +718,51 @@ footer.sticky-bottom {
         }
 
         .research-use-links {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.3rem;
+          display: grid;
+          gap: 0.35rem;
+          grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 
           a {
-            border: 1px solid var(--global-text-color-light);
-            border-radius: 999px;
+            align-items: center;
+            border: 1px solid rgba(128, 128, 128, 0.28);
+            border-radius: 0.4rem;
             color: var(--global-text-color);
-            font-size: 0.7rem;
-            line-height: 1;
-            padding: 0.3rem 0.45rem;
+            display: grid;
+            gap: 0.15rem 0.45rem;
+            grid-template-columns: minmax(0, 1fr) auto;
+            padding: 0.45rem 0.55rem;
             text-decoration: none;
             transition:
+              background-color 0.15s ease,
               border-color 0.15s ease,
-              color 0.15s ease,
+              box-shadow 0.15s ease,
               transform 0.15s ease;
+
+            .research-use-org {
+              font-size: 0.72rem;
+              font-weight: 600;
+              line-height: 1.2;
+            }
+
+            .research-use-paper {
+              color: var(--global-text-color-light);
+              font-size: 0.62rem;
+              grid-column: 1 / -1;
+              line-height: 1.25;
+            }
+
+            i {
+              color: var(--global-theme-color);
+              font-size: 0.58rem;
+              grid-column: 2;
+              grid-row: 1;
+            }
 
             &:hover,
             &:focus-visible {
+              background: var(--global-bg-color);
               border-color: var(--global-theme-color);
-              color: var(--global-theme-color);
+              box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
               transform: translateY(-1px);
             }
           }

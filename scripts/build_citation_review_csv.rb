@@ -23,9 +23,13 @@ authors_by_id = authors.to_h { |author| [author["authorId"], author] }
 research_use = YAML.load_file(research_use_path).fetch("llmattacks")
 recovered = File.exist?(recovered_path) ? JSON.parse(File.read(recovered_path)) : {}
 site_excerpts = []
+normalize_publication_url = lambda do |url|
+  url.to_s.sub(%r{\Ahttp://}, "https://").sub(%r{#page=1\z}, "").sub(%r{/\z}, "")
+end
 
 verified_by_arxiv = Hash.new { |hash, key| hash[key] = [] }
 verified_by_title = Hash.new { |hash, key| hash[key] = [] }
+organizations_by_url = Hash.new { |hash, key| hash[key] = [] }
 
 research_use.each do |group, organizations|
   Array(organizations).each do |organization|
@@ -33,6 +37,7 @@ research_use.each do |group, organizations|
     arxiv_id = organization.fetch("url", "")[%r{arxiv\.org/pdf/([^#?]+)}, 1]
     verified_by_arxiv[arxiv_id] << record if arxiv_id
     verified_by_title[organization.fetch("paper").downcase] << record
+    organizations_by_url[normalize_publication_url.call(organization.fetch("url", ""))] << organization.fetch("name")
   end
 end
 
@@ -108,7 +113,8 @@ CSV.open(output_path, "w:UTF-8", write_headers: true, headers: headers, force_qu
         "url" => source_url,
         "excerpt" => contexts.first,
         "page" => recovered_excerpt&.fetch("page", nil),
-        "evidence_type" => recovered_excerpt&.fetch("method", "semantic_scholar_context")
+        "evidence_type" => recovered_excerpt&.fetch("method", "semantic_scholar_context"),
+        "organizations" => organizations_by_url[normalize_publication_url.call(source_url)].uniq.sort
       }
     end
 

@@ -26,8 +26,8 @@ for the site’s lazy-loaded citation-excerpt expansion.
 `organization_affiliation_audit.csv` records the second-pass verification for
 every company and university shown on the site. An organization is retained only
 when its linked publication explicitly prints the name as an author affiliation.
-Google is the sole documented exception: that publication explicitly describes
-Google as the workshop host.
+Stanford University is the sole documented non-affiliation exception: the
+publication names it as a workshop co-organizer.
 
 The API key is stored separately in `.env.semantic-scholar`, which is ignored by
 Git and must never be committed.

@@ -965,6 +965,21 @@ footer.sticky-bottom {
           font-weight: 600;
         }
 
+        .citation-excerpt-footer {
+          align-items: end;
+          display: flex;
+          gap: 0.6rem;
+          justify-content: space-between;
+        }
+
+        .citation-excerpt-organizations {
+          color: var(--global-theme-color);
+          font-size: 0.63rem;
+          font-weight: 700;
+          margin-left: auto;
+          text-align: right;
+        }
+
         @media (max-width: 575px) {
           .research-use-row {
             grid-template-columns: 1fr;

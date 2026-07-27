@@ -5,12 +5,6 @@ llmattacks:
       url: https://arxiv.org/pdf/2510.08413#page=1
       citation_page: 4
       excerpt: Perplexity is also a widely-used metric that has a wide range of applications, such as detecting adversarial attacks [Alon and Kamfonas, 2023].
-    - name: Google
-      paper: Identifying and Mitigating the Security Risks of Generative AI
-      url: https://arxiv.org/pdf/2308.14840#page=1
-      citation_page: 20
-      evidence_basis: workshop_host
-      excerpt: Recent work (Zou et al., 2023) shows how to carry out automated safety attacks on open-source LLM chatbots that surprisingly transfer also to closed-source chatbots, such as ChatGPT, Bard, Claude. Similarly, follow-up work to detect such safety attacks was also demonstrated on open-source models (Alon and Kamfonas, 2023).
     - name: Microsoft
       paper: "Highlight & Summarize: RAG without the Jailbreaks"
       url: https://arxiv.org/pdf/2508.02872#page=1
@@ -92,6 +86,12 @@ llmattacks:
       url: https://arxiv.org/pdf/2310.08419#page=1
       citation_page: 7
       excerpt: PAIR is evaluated against two jailbreaking defenses, including a perplexity filter [37, 38].
+    - name: Stanford University
+      paper: Identifying and Mitigating the Security Risks of Generative AI
+      url: https://arxiv.org/pdf/2308.14840#page=1
+      citation_page: 20
+      evidence_basis: workshop_organizer
+      excerpt: Follow-up work to detect such safety attacks was also demonstrated on open-source models (Alon and Kamfonas, 2023).
     - name: Carnegie Mellon
       paper: Improving Alignment and Robustness with Circuit Breakers
       url: https://arxiv.org/pdf/2406.04313#page=1

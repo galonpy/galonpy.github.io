@@ -70,10 +70,18 @@ $(document).ready(function() {
           $link.append($('<span>', { class: 'citation-excerpt-authors', text: citation.authors }));
         }
         $link.append($('<q>', { text: citation.excerpt }));
-        $link.append($('<span>', {
+        const $footer = $('<span>', { class: 'citation-excerpt-footer' });
+        $footer.append($('<span>', {
           class: 'citation-excerpt-source',
           text: citation.page ? `PDF page ${citation.page} · Open citing paper` : 'Open citing paper'
         }));
+        if (Array.isArray(citation.organizations) && citation.organizations.length) {
+          $footer.append($('<span>', {
+            class: 'citation-excerpt-organizations',
+            text: citation.organizations.join(' · ')
+          }));
+        }
+        $link.append($footer);
         $list.append($link);
       });
 

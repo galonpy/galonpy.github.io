@@ -1,0 +1,466 @@
+{
+  "2064cb0c0541ff063b600c4a2c9012d1199c27fa": {
+    "excerpt": "Detecting Language Model Attacks with Perplexity.",
+    "page": 12,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Hijacking Agent Memory: Stealthy Trojan Attacks Through Conversational Interaction",
+    "source_url": "https://arxiv.org/pdf/2605.29960#page=1"
+  },
+  "3b11d39b205836a01dfd6c59c8530111109209b2": {
+    "excerpt": "5.4 Possible Defenses We study three types of defense strategies: Perplexity Filter (Alon and Kamfonas, 2023) that rejects records exceeding a fluency threshold, Distil Classifier (Sanh et al., 2019) that is trained to distinguish adversarial texts from benign ones, and LLM-based Memory Auditor that prompts a separate LLM to flag suspicious entries.",
+    "page": 8,
+    "method": "pdf_in_text_author_citation",
+    "title": "MemMorph: Tool Hijacking in LLM Agents via Memory Poisoning",
+    "source_url": "https://arxiv.org/pdf/2605.26154#page=1"
+  },
+  "528e46c77b273d832c63fc988826d5acf04ff1ff": {
+    "excerpt": "We further consider three lightweight inputfiltering defenses: (i)PPL-based filtering[81], Setting Original Attack Performance (Headline) AfterPPLFilter (Headline) Acc Cost Acc Cost Initial cascade 78.00% 13.43 - -Attackp= 023.00% 7.26 42.00% 9.04Attackp= 0.241.00% 14.62 63.00% 16.49Attackp= 0.443.00% 15.99 61.00% 16.49Attackp= 0.650.00% 18.34 55.00% 15.31Attackp= 0.856.50% 20.09 62.50% 16.75Attackp= 163.00% 22.45 70.50% 18.48 Setting Original A",
+    "page": 15,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "81",
+    "title": "When Efficiency Backfires: Cascading LLMs Trigger Cascade Failure under Adversarial Attack",
+    "source_url": "https://arxiv.org/pdf/2605.17288#page=1"
+  },
+  "abf772f4f9b9cafd606bce64242e9361f24a3ffc": {
+    "excerpt": "Defender Skill-Unseen Method Skill-Seen Method Evolved AttackerReasoning Benchmarks 4B 8B 70B 4B 8B 70B 4B 8B 70B 3B 8B 70B PPL [Alon and Kamfonas, 2023] 78.91 76.64 40.00 86.89 77.16 43.23 90.68 89.70 58.33-0.95 -5.15 -0.09 Self-Exam [Phute et al., 2023] 71.53 40.03 34.73 36.52 25.15 18.35 15.16 36.32 15.01-1.01 -5.23 0.00 Retokenization [Jain et al., 2023] 72.15 54.91 41.06 63.55 54.03 42.76 65.05 86.91 32.98-9.46 -23.33 -8.90 Self-Reminder [Wu et al., 2023] 29.14 41.44 22.20 24.54 43.16 15.25 45.36",
+    "page": 9,
+    "method": "pdf_in_text_author_citation",
+    "title": "Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution",
+    "source_url": "https://arxiv.org/pdf/2605.13411#page=1"
+  },
+  "8c94a03a771b3a52b053e1a82dbfd60a2d9cc653": {
+    "excerpt": "Type Defense Reference Year Code Access Flexibility Extra LLM Fine-tuning Cost Pre-filter Erase-and-check [36] 2023✓ ✓ Iterative LlamaGuard [29] 2023✓ ✓ ♂robot/cogsSingle-pass Perplexity Filter [1] 2023✗ ✓ ♂robot/cogsSingle-pass Hidden State Guard [105] 2024✓ ✓ ♂robot/cogsSingle-pass System prompt SelfRemider [80] 2023✓ ✓ Single-pass Fine-tune Constitutional AI [5] 2022✗ ✗ /cogsTraining Safe-RLHF [14] 2023✓ ✗ /cogsTraining Deep Alignment [62] 2024✗ ✗ /cogsTraining Safety-Tuned LLaMAs [6] 2024✓ ✗ /cogsTraining Safe unlearning [100] 2024✓ ✗ /cogsTrainin",
+    "page": 5,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "1",
+    "title": "SoK: Robustness in Large Language Models against Jailbreak Attacks",
+    "source_url": "https://arxiv.org/pdf/2605.05058#page=1"
+  },
+  "30dae3dd507a0b15b3cb6f07efbaa2ae8dafe75c": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132(2023).",
+    "page": 13,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Revisiting JBShield: Breaking and Rebuilding Representation-Level Jailbreak Defenses",
+    "source_url": "https://arxiv.org/pdf/2605.03095#page=1"
+  },
+  "52160d2a367e799389ad77f857a53c32b8adca88": {
+    "excerpt": "Detecting Language Model Attacks with Perplexity.arXiv(2023).",
+    "page": 14,
+    "method": "pdf_bibliography_entry_only",
+    "title": "An AI Agent Execution Environment to Safeguard User Data",
+    "source_url": "https://arxiv.org/pdf/2604.19657#page=1"
+  },
+  "536327f511c418ae158bbd963a7986ad07b0f5e3": {
+    "excerpt": "Alon & Kamfonas, 2023), where they primarily treat the target model as an object to optimize against, without explaining jailbreak success in terms of the model’s internal mechanism.",
+    "page": 2,
+    "method": "pdf_in_text_author_citation",
+    "title": "One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety",
+    "source_url": "https://arxiv.org/pdf/2604.25921#page=1"
+  },
+  "dfa1c127784d0fd0e6f65ee8b33213403abef301": {
+    "excerpt": "Some defenses aim to detect harmful behavior through perplexity filtering (Alon & Kamfonas, 2023), through inconsistency upon repetition (Zhang et al., 2024), or by deploying an auxiliary guard model (Inan et al., 2023).",
+    "page": 1,
+    "method": "pdf_in_text_author_citation",
+    "title": "Directional Embedding Smoothing for Robust Vision Language Models",
+    "source_url": "https://arxiv.org/pdf/2603.15259#page=1"
+  },
+  "c24d22a992311a6094a75fef6ae30275500013fb": {
+    "excerpt": "Perplexity Screening at Cache Insertion We adopt perplexity (PPL) as a lightweight indicator for detecting abnormal collision triggers in semantic caching (Alon & Kamfonas, 2023).",
+    "page": 8,
+    "method": "pdf_in_text_author_citation",
+    "title": "From Similarity to Vulnerability: Key Collision Attack on LLM Semantic Caching",
+    "source_url": "https://arxiv.org/pdf/2601.23088#page=1"
+  },
+  "bdae9ce6d3a3727dedef4face284e6127e8cf6fb": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132(2023).",
+    "page": 14,
+    "method": "pdf_bibliography_entry_only",
+    "title": "RerouteGuard: Understanding and Mitigating Adversarial Risks for LLM Routing",
+    "source_url": "https://arxiv.org/pdf/2601.21380#page=1"
+  },
+  "6f1d4942d1759b749fc6b8685f361e7d3c53c2dc": {
+    "excerpt": "In contrast, the RETOKENIZEdefence has a negligible effect 7We exclude certain other defences, such as perplexitybased methods (Alon and Kamfonas, 2024;",
+    "page": 6,
+    "method": "pdf_in_text_author_citation",
+    "title": "In Vino Veritas and Vulnerabilities: Examining LLM Safety via Drunk Language Inducement",
+    "source_url": "https://arxiv.org/pdf/2601.22169#page=1"
+  },
+  "d1899f334aabac392e8aafa1420a3eef80408493": {
+    "excerpt": "gs.We evaluate three representative classes of defenses under the same episodes used for efficacy and resource measurements: (i) a prompt-level perplexity (PPL) filter applied to both the user query and the tool response (we conservatively score each episode by the larger of the two) with detector-specific thresholds calibrated from benign tool docstrings (Alon and Kamfonas, 2023;",
+    "page": 7,
+    "method": "pdf_in_text_author_citation",
+    "title": "Beyond Max Tokens: Stealthy Resource Amplification via Tool Calling Chains in LLM Agents",
+    "source_url": "https://arxiv.org/pdf/2601.10955#page=1"
+  },
+  "d3de5dfb972a3d67f02355674b642e08af915353": {
+    "excerpt": "Inan et al., 2023) or prompt-based transformations (Alon and Kamfonas, 2023a;",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Be Your Own Red Teamer: Safety Alignment via Self-Play and Reflective Experience Replay",
+    "source_url": "https://arxiv.org/pdf/2601.10589#page=1"
+  },
+  "71f30c8b6aca4dbd4a81302ac30335421b1a8688": {
+    "excerpt": "Kamfonas, “Detecting language model attacks with perplexity,” 2023.",
+    "page": 14,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Trust in LLM-controlled Robotics: a Survey of Security Threats, Defenses and Challenges",
+    "source_url": "https://arxiv.org/pdf/2601.02377#page=1"
+  },
+  "fb49b5335b4ad83a19362dd9012a72d8a64e7e93": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132(2023).",
+    "page": 13,
+    "method": "pdf_bibliography_entry_only",
+    "title": "MIRAGE: Misleading Retrieval-Augmented Generation via Black-box and Query-agnostic Poisoning Attacks",
+    "source_url": "https://arxiv.org/pdf/2512.08289#page=1"
+  },
+  "c0519332fced4caaa47e6786380009b73048188a": {
+    "excerpt": "Detecting language model attacks with perplexity.CoRR, abs/2308.14132, 2023.",
+    "page": 16,
+    "method": "pdf_bibliography_entry_only",
+    "title": "From static to adaptive: immune memory-based jailbreak detection for large language models",
+    "source_url": "https://arxiv.org/pdf/2512.03356#page=1"
+  },
+  "393de9fe2c7c1b1c31abfe18f37b2f36638e4d9f": {
+    "excerpt": "For example, SmoothLLM [11], JailGuard [12], LlamaGuard [18], Perplexity-based detection methods [19], and various defense strategies [20], [21] have been developed to detect attacks and strengthen AI security.",
+    "page": 2,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "19",
+    "title": "NegBLEURT Forest: Leveraging Inconsistencies for Detecting Jailbreak Attacks",
+    "source_url": "https://arxiv.org/pdf/2511.11784#page=1"
+  },
+  "8f5432ec80d42614143a31cf4537cc3f311459d4": {
+    "excerpt": "Kamfonas, “Detecting language model attacks with perplexity,”arXiv preprint arXiv:2308.14132, 2023.",
+    "page": 8,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Secure Retrieval-Augmented Generation Against Poisoning Attacks",
+    "source_url": "https://arxiv.org/pdf/2510.25025#page=1"
+  },
+  "42f560c26f22484fc7859a295527fd786f598f96": {
+    "excerpt": "For detection-based defenses, we evaluate perplexity (PPL) [24] and windowed perplexity (Window-PPL) [3, 15, 23], computed using a pre-trained language model (GPT-2) [3] with OpenAI tiktoken cl100k_base tokenization [40];",
+    "page": 10,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "3",
+    "title": "When Compression Becomes an Attack Surface: Black-Box Attacks on Prompt-Compressed LLM Agents",
+    "source_url": "https://arxiv.org/pdf/2510.22963#page=1"
+  },
+  "9f8a3c6f1fca4aeb8364bdb767b2e14e92376d5d": {
+    "excerpt": "“Detecting Language Model Attacks with Perplexity,” arXiv, 2023.",
+    "page": 19,
+    "method": "pdf_bibliography_entry_only",
+    "title": "SoK: Systematizing LLM Prompt Security: Taxonomies, Datasets, and Unified Evaluation of Attacks and Defenses",
+    "source_url": "https://arxiv.org/pdf/2510.15476#page=1"
+  },
+  "81eb3725909d73e81bd9b604eca1ac4d2ee53992": {
+    "excerpt": "me to induce jailbreaks. However, these techniques require modifying the model’s internal activations during inference, whereas our approach only requires access to them, without altering the model itself. Existing Defenses.Previous work has demonstrated that state-of-the-art jailbreak methods are vulnerable to perplexity-based filtering (Jain et al., 2023; Alon & Kamfonas, 2023). The Naive (averaged) and Windowed perplexity filters proposed by Jain et al. (2023) effectively detect adversarial prompts optimized with GCG. Similarly, in (Alon & Kamfonas, 2023), the LightGBM classifier successfully detects suffix-based jailbreaks; however, it is ineffective against human-crafted jailbreaks. Besides perplexity-based defenses, rec",
+    "page": 9,
+    "method": "pdf_in_text_author_citation",
+    "title": "LatentBreak: Jailbreaking Large Language Models through Latent Space Feedback",
+    "source_url": "https://arxiv.org/pdf/2510.08604#page=1"
+  },
+  "4670c27863392fd55d5bc448fd2570a441e9f675": {
+    "excerpt": "5.2 PERPLEXITYFILTERING Inspired by Alon & Kamfonas (2023), we used GPT-2 (Radford et al., 2019) to investigate whether a perplexity-based filtering defense could be effective against tool descriptions generated by the attacker.",
+    "page": 9,
+    "method": "pdf_in_text_author_citation",
+    "title": "ToolTweak: An Attack on Tool Selection in LLM-based Agents",
+    "source_url": "https://arxiv.org/pdf/2510.02554#page=1"
+  },
+  "e6a477d5c50dd5ba38ff55ebfbf50a93c21c8d39": {
+    "excerpt": "Jailbreak DefensesThe perplexity-based defense method is proposed to detect malicious jailbreak prompts, as they often exhibit unusual patterns compared to safe prompts (Alon and Kamfonas, 2023).",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Harmful Prompt Laundering: Jailbreaking LLMs with Abductive Styles and Symbolic Encoding",
+    "source_url": "https://arxiv.org/pdf/2509.10931#page=1"
+  },
+  "d83c2f61d0a80687f583892ab6e07a2346d3b323": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132(2023).",
+    "page": 13,
+    "method": "pdf_bibliography_entry_only",
+    "title": "DisarmRAG: Stealthy Retriever-Centric Poisoning to Disable Self-Correction in Retrieval-Augmented Generation (Extended Version)",
+    "source_url": "https://arxiv.org/pdf/2508.20083#page=1"
+  },
+  "f2966010afed54e24e549943316c64f2612311fa": {
+    "excerpt": "For instance, Alon and Kamfonas [2023] employs perplexity-based detection to reduce harmful outputs.",
+    "page": 2,
+    "method": "pdf_in_text_author_citation",
+    "title": "Multi-Level Safety Continual Projection for Fine-Tuned Large Language Models without Retraining",
+    "source_url": "https://arxiv.org/pdf/2508.09190#page=1"
+  },
+  "38070e5b1e516f0c62e138afd124e0e00f26d16f": {
+    "excerpt": "Xie et al., 2023), external detectors/classifiers (Alon & Kamfonas, 2023;",
+    "page": 4,
+    "method": "pdf_in_text_author_citation",
+    "title": "LoRA is All You Need for Safety Alignment of Reasoning LLMs",
+    "source_url": "https://arxiv.org/pdf/2507.17075#page=1"
+  },
+  "3d9b8c45bda83aaf0bf608664a35e5c078bd9d1e": {
+    "excerpt": "Alon and Kamfonas [ 13] introduce a perplexitybased approach in which a reference language model computes token- or sequence-level perplexity;",
+    "page": 2,
+    "method": "pdf_in_text_author_citation",
+    "title": "DeRAG: Black-box Adversarial Attacks on Multiple Retrieval-Augmented Generation Applications via Prompt Injection",
+    "source_url": "https://arxiv.org/pdf/2507.15042#page=1"
+  },
+  "76f16299c2646582443999f55ebeabe8d316e923": {
+    "excerpt": "We consider three types defenses on four LLMs against jailbreak attacks: (1) LlamaGuard (Inan et al., 2023), a specialized language model trained to identify harmful content through direct dialogue understanding, (2) Perplexity-based Detection (Alon and Kamfonas, 2023), which flags suspicious queries by analyzing token-level probability distributions,",
+    "page": 5,
+    "method": "pdf_in_text_author_citation",
+    "title": "Paper Summary Attack: Jailbreaking LLMs through LLM Safety Papers",
+    "source_url": "https://arxiv.org/pdf/2507.13474#page=1"
+  },
+  "8083622e4476da66b371161a77995573f532b638": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132, 2023.",
+    "page": 9,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Toward a Dynamic Stackelberg Game-Theoretic Framework for Agentic AI Defense Against LLM Jailbreaking",
+    "source_url": "https://arxiv.org/pdf/2507.08207#page=1"
+  },
+  "84d15aaec52d32c9978ddb5ab3e29941bbe23a2c": {
+    "excerpt": "Detecting language model attacks with perplexity.",
+    "page": 13,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Cascading Adversarial Bias from Injection to Distillation in Language Models",
+    "source_url": "https://arxiv.org/pdf/2505.24842#page=1"
+  },
+  "6820e754488cb51f14f182d261df8fcf17b828b8": {
+    "excerpt": "insic mechanisms include finetuning or RLHF training on an LLM (Bianchi et al., 2024; Chen et al., 2024a; Yuan et al., 2024b; Ouyang et al., 2022b; Bai et al., 2022; Dai et al., 2023). Extrinsic safety mechanisms utilize external models to detect harmful inputs and responses; these models can either be simple filters or use guard models. Jain et al. (2023); Alon and Kamfonas (2023); Hu et al. (2024) propose using perplexity filtering for detecting harmful prompts. Guard models defend LLMs by training separate LLMs to detect harmful text (see Table 2). Separately, a line of work has introduced interpretability methods to transparently expose safety concerns in LLMs (Bereska and Gavves, 2024; Singh et al., 2023; Arditi et al., 20",
+    "page": 9,
+    "method": "pdf_in_text_author_citation",
+    "title": "OMNIGUARD: An Efficient Approach for AI Safety Moderation Across Languages and Modalities",
+    "source_url": "https://arxiv.org/pdf/2505.23856#page=1"
+  },
+  "b0794049c22fb3d868a907131d0e8c0a6511025e": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132, 2023.",
+    "page": 10,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Stronger Enforcement of Instruction Hierarchy via Augmented Intermediate Representations",
+    "source_url": "https://arxiv.org/pdf/2505.18907#page=1"
+  },
+  "502db36c7e785b458ef8735b64f45a260b528281": {
+    "excerpt": "2023)✗ ✗ ✗ ✗ Perplexity-Filter (Alon and Kamfonas 2023)✗ ✗ ✓ ✗ Input Sanitization Erase-and-Check (Kumar et al.",
+    "page": 4,
+    "method": "pdf_in_text_author_citation",
+    "title": "Chain-of-Thought Driven Adversarial Scenario Extrapolation for Robust Language Models",
+    "source_url": "https://arxiv.org/pdf/2505.17089#page=1"
+  },
+  "9f788e3e30dfba2575f5dd527364100143b8b517": {
+    "excerpt": "Second, we testperplexity-based filtering (Alon & Kamfonas, 2023): we finetune GPT-4o-mini on our CMP set to automatically convert 460 general purpose prompts from Databricks Dolly 15k (Conover et al., 2023)(Safe-Default) into Safe- English & CMP 5Full Wilcoxon test results in Appendix (Table 9).",
+    "page": 5,
+    "method": "pdf_in_text_author_citation",
+    "title": "Phonetic Perturbations Reveal Tokenizer-Rooted Safety Gaps in LLMs",
+    "source_url": "https://arxiv.org/pdf/2505.14226#page=1"
+  },
+  "31ceac6eaf486d33557e2f900a7553e95684bd72": {
+    "excerpt": "Building upon the work of Jainet al.(Jain et al., 2023), Alon and Kamfonas (Alon and Kamfonas, 2023) proposed a classifier that",
+    "page": 15,
+    "method": "pdf_bibliography_entry_only",
+    "title": "LiteLMGuard: Seamless and Lightweight On-Device Prompt Filtering for Safeguarding Small Language Models against Quantization-induced Risks and Vulnerabilities",
+    "source_url": "https://arxiv.org/pdf/2505.05619#page=1"
+  },
+  "537b34daea842b186e5f4bde7eaa1198a4cbbe09": {
+    "excerpt": "Inspired by the plain perplexity filtering (PPL) detection method [4], we propose a novel approach called multimodal perplexity filtering (MPL) which leverages multimodal feature extraction to compute perplexity.",
+    "page": 10,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "4",
+    "title": "What's Pulling the Strings? Evaluating Integrity and Attribution in AI Training and Inference through Concept Shift",
+    "source_url": "https://arxiv.org/pdf/2504.21042#page=1"
+  },
+  "5eab78cb5f117dfb25b7c3e8e01586aa74f4739a": {
+    "excerpt": "Baselines We compare against eight jailbreak defenses: PPL (Alon and Kamfonas 2023), Self-Examination (Phute et al.",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Feature-Aware Malicious Output Detection and Mitigation",
+    "source_url": "https://arxiv.org/pdf/2504.09191#page=1"
+  },
+  "72047a3141cffe6c4564258212c5d648cad1e36f": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132(2023).",
+    "page": 11,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Practical Poisoning Attacks against Retrieval-Augmented Generation",
+    "source_url": "https://arxiv.org/pdf/2504.03957#page=1"
+  },
+  "96cd145b56f4a9073b778037419e328a1bf74e17": {
+    "excerpt": "ly, on OpenCLIP, demonstrating its generalizability. This demonstrates that attackers can weaponize open-source models as surrogates to poison closed-source RAG systems, revealing a new threat vector: transferability empowers adversaries to corrupt even restricted-access multimodal RAG. 4.6 Defense against MM-PoisonRAG While prior works (Gonen et al., 2022; Alon and Kamfonas, 2023; Wu et al., 2022) have proposed retrieval-time defenses for text-only RAG, defenses for multimodal RAG remain underexplored. To probe this gap, we adapt a paraphrasing-based defense (Jain et al., 2023) following Zou et al. (2024). However, both LPA and GPA remain effective, exhibiting comparable drops in retrieval recall and downstream accuracy as wit",
+    "page": 8,
+    "method": "pdf_in_text_author_citation",
+    "title": "MM-PoisonRAG: Disrupting Multimodal RAG with Local and Global Poisoning Attacks",
+    "source_url": "https://arxiv.org/pdf/2502.17832#page=1"
+  },
+  "ed618d9ceebf2bcfd9f257a74844d909d8149dad": {
+    "excerpt": "defend(self, message) → (defended_message, if_reject) PPL (Alon and Kamfonas, 2023) Self Reminder (Xie et al., 2023) Prompt Guard (Meta-Llama, 2024) Goal Prioritization (Zhang et al., 2024e) Paraphrase (Jain et al., 2023) ICD (Wei et al., 2023b) Intraprocess Utilizes safer decoding or generation strategies to ens",
+    "page": 12,
+    "method": "pdf_bibliography_entry_only",
+    "title": "AISafetyLab: A Comprehensive Framework for AI Safety Evaluation and Improvement",
+    "source_url": "https://arxiv.org/pdf/2502.16776#page=1"
+  },
+  "29b6ea9e38b41fb2bb6838609a8c43b1632ea273": {
+    "excerpt": "In literature, many studies utilize perplexity, e.g., for reference model pruning (Ankner et al.), attack detection (Alon and Kamfonas, 2023), misinformation detection (Lee et al., 2020), and uncertainty quantification (Cooper and Scholak, 2024).",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Stepwise Perplexity-Guided Refinement for Efficient Chain-of-Thought Reasoning in Large Language Models",
+    "source_url": "https://arxiv.org/pdf/2502.13260#page=1"
+  },
+  "5bb7059ee5d88eb90cb4c53b92a90ef73ab2dbc4": {
+    "excerpt": "The first stage, prompt detection, utilizes perplexity detection (PPL) (Alon & Kamfonas, 2024) to identify adversarial suffixes.",
+    "page": 6,
+    "method": "pdf_in_text_author_citation",
+    "title": "MetaSC: Test-Time Safety Specification Optimization for Language Models",
+    "source_url": "https://arxiv.org/pdf/2502.07985#page=1"
+  },
+  "3663c7d7317d53f10e54c656994206aca0bb626a": {
+    "excerpt": "As a consequence, token-level methods produce semantically meaningless input prompts that can be mitigated by perplexity-based or smoothing-based filters (Alon & Kamfonas, 2023;",
+    "page": 1,
+    "method": "pdf_in_text_author_citation",
+    "title": "Adversarial Reasoning at Jailbreaking Time",
+    "source_url": "https://arxiv.org/pdf/2502.01633#page=1"
+  },
+  "e74fe8ad5fb88c9e9ba76b59a411dde5b1cad9c9": {
+    "excerpt": "“Detecting Language Model Attacks with Perplexity”.",
+    "page": 6,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Contextual Agent Security: A Policy for Every Purpose",
+    "source_url": "https://arxiv.org/pdf/2501.17070#page=1"
+  },
+  "d963d32fe60a9aa570539a4e27cdb11e29c38619": {
+    "excerpt": "If a response is identified as potentially harmful, the model is instructed to firmly reject it, regardless of the input’s phrasing.6 Baselines.For this analysis, we choose two open-source models most vulnerable to our attack: Llama-3.1-8B-instruct and Gemma-2-9B-it and evaluate their performance against seven jailbreak defenses: (1) Perplexity(Alon and Kamfonas, 2023) calculates if the perplexity of input query exceeds a predefined threshold, (2) System promptappends a safe system prompt to enhance safety and helpfulness of the response, (3) Self- Reminder(Xie et al., 2023) encapsulates the user input and reminds it to respond responsibly, (4) In-Context defense(Wei et al., 2023b) enhances model robustness by demo",
+    "page": 8,
+    "method": "pdf_in_text_author_citation",
+    "title": "Turning Logic Against Itself : Probing Model Defenses Through Contrastive Questions",
+    "source_url": "https://arxiv.org/pdf/2501.01872#page=1"
+  },
+  "7b19f27cdc9f73e1092943b5700fa164cb39d6c4": {
+    "excerpt": "Another approach focuses on identifying jailbreak prompts using indicators, such as classifying input sequences based on perplexity and sequence length (Alon and Kamfonas, 2023) or using linear classifiers to detect jailbreak activations and decide whether to respond (Zhao et al., 2024a).",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Shaping the Safety Boundaries: Understanding and Defending Against Jailbreaks in Large Language Models",
+    "source_url": "https://arxiv.org/pdf/2412.17034#page=1"
+  },
+  "7dcc63f5222c326528df8ba7cd369b6a2367d3a6": {
+    "excerpt": "PPL [2] and Self- Exam [27] ar post-generation checking methods, whileParaphrase [14], Retokenization [14], Self-Remind [27], andICD [26] are pre-generation checking methods to mitigate harmful content before model generation.",
+    "page": 6,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "2",
+    "title": "FlexLLM: Exploring LLM Customization for Moving Target Defense on Black-Box LLMs Against Jailbreak Attacks",
+    "source_url": "https://arxiv.org/pdf/2412.07672#page=1"
+  },
+  "5f0913ff752271bdb958b73e13f6b46577554379": {
+    "excerpt": "R Chao et al. (2023) refines adversarial prompts iteratively by leveraging feedback from the target model. Jailbreak Defense Methods. To mitigate the risks posed by jailbreak attacks, various defense mechanisms Wei et al. (2023); Xie et al. (2023); Zhou et al. (2024); Robey et al. (2023b); Glukhov et al. (2023); Yuanshun et al. (2023); Zheng et al. (2024a); Alon & Kamfonas (2023); Sha & Zhang (2024); Liu et al. (2024a) have been developed. These defenses can be broadly divided into systemlevel and model-level strategies. System-level defenses Xie et al. (2023); Li et al. (2023); Zhou et al. (2024); Robey et al. (2023b); Cao et al. (2023); Bianchi et al. (2023); Ji et al. (2024a) implement external safety measures for both inp",
+    "page": 10,
+    "method": "pdf_in_text_author_citation",
+    "title": "JAILJUDGE: A Comprehensive Jailbreak Judge Benchmark with Multi-Agent Enhanced Explanation Evaluation Framework",
+    "source_url": "https://arxiv.org/pdf/2410.12855#page=1"
+  },
+  "aeeb96680720fa12edf48f4584160405741cdc30": {
+    "excerpt": "Additional strategies include perplexity-based detection [38], [39] and self-classification by LLMs [40]–[42], which detect perplexity or directly assess prompt harmfulness.",
+    "page": 3,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "39",
+    "title": "Understanding the Effectiveness of Coverage Criteria for Large Language Models: A Special Angle from Jailbreak Attacks",
+    "source_url": "https://arxiv.org/pdf/2408.15207#page=1"
+  },
+  "93945d58d3bc081d7d2f6237e2ae00f6dd8f8d1c": {
+    "excerpt": "Detecting Language Model Attacks with Perplexity.",
+    "page": 12,
+    "method": "pdf_bibliography_entry_only",
+    "title": "h4rm3l: A Language for Composable Jailbreak Attack Synthesis",
+    "source_url": "https://arxiv.org/pdf/2408.04811#page=1"
+  },
+  "9a25aa8712fa7b4b28f9fcdaadabefa784db0cf0": {
+    "excerpt": "Since nonsensical prompts are easy to be detected by the Target LLM (Alon and Kamfonas, 2023), sentence-level methods aim to disguise readable prompts to deceive the Target LLM.",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "Automated Progressive Red Teaming",
+    "source_url": "https://arxiv.org/pdf/2407.03876#page=1"
+  },
+  "e615f33365ea1d439507fc477588528ffb0764a8": {
+    "excerpt": "Detecting language model attacks with perplexity. Rohan Anil, Sebastian Borgeaud, Jean-Baptiste Alayrac, Jiahui Yu, Radu Soricut, Johan Schalkwyk, Andrew M.",
+    "page": 9,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Large Language Models Are Involuntary Truth-Tellers: Exploiting Fallacy Failure for Jailbreak Attacks",
+    "source_url": "https://arxiv.org/pdf/2407.00869#page=1"
+  },
+  "f7ff29cf1a4e954ce43a060df61a995ec58c2442": {
+    "excerpt": "Alon & Kamfonas, 2023) classify a prompt as harmful if the perplexity is higher than a predetermined threshold.",
+    "page": 3,
+    "method": "pdf_in_text_author_citation",
+    "title": "PARDEN, Can You Repeat That? Defending against Jailbreaks via Repetition",
+    "source_url": "https://arxiv.org/pdf/2405.07932#page=1"
+  },
+  "ebbf09b46073d82054de49a9ee9adb76c83daeb8": {
+    "excerpt": "LLMC enables comprehensive evaluation of quantized models, providing detailed performance metrics and analysis, e.g., PPL (Alon and Kamfonas, 2023), and data 1All adaptations mentioned here have been implemented and results are shown in the appendix.",
+    "page": 2,
+    "method": "pdf_in_text_author_citation",
+    "title": "LLMC: Benchmarking Large Language Model Quantization with a Versatile Compression Toolkit",
+    "source_url": "https://arxiv.org/pdf/2405.06001#page=1"
+  },
+  "e56f14ced9f7ce344ed14bdcb46860ccac72ac83": {
+    "excerpt": "The adversarial perplexity loss is proposed to circumvent defenses based on perplexity detection [3], which can identify the presence of prompt injection attacks in candidate responses by calculating their log-perplexity.",
+    "page": 5,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "3",
+    "title": "Optimization-based Prompt Injection Attack to LLM-as-a-Judge",
+    "source_url": "https://arxiv.org/pdf/2403.17710#page=1"
+  },
+  "0a691e58a36cdcdaaf72294e88420f79e61e85c7": {
+    "excerpt": "Detecting language model attacks with perplexity. Anthropic.",
+    "page": 10,
+    "method": "pdf_bibliography_entry_only",
+    "title": "ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs",
+    "source_url": "https://arxiv.org/pdf/2402.11753#page=1"
+  },
+  "f4e06256ab07727ff4e0465deea83fcf45012354": {
+    "excerpt": "Kamfonas, “Detecting language model attacks with perplexity,”arXiv, 2023.",
+    "page": 16,
+    "method": "pdf_bibliography_entry_only",
+    "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models",
+    "source_url": "https://arxiv.org/pdf/2402.07867#page=1"
+  },
+  "4fda99880cdbf8f178f01eb4c8dbdae7f959ea94": {
+    "excerpt": "Detecting language model attacks with perplexity.arXiv preprint arXiv:2308.14132.",
+    "page": 17,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Red-Teaming for Generative AI: Silver Bullet or Security Theater?",
+    "source_url": "https://arxiv.org/pdf/2401.15897#page=1"
+  },
+  "c10223e02b95ec5406c8676b9d58457a5c703e2d": {
+    "excerpt": "Content-based defenses judge the harmfulness of the output rather than its origin [ 31, 33, 36, 44, 53, 60, 67, 72], so a schema-valid and stylistically consistent substitution presents no anomaly [1]. Content detection is not origin verification, which leaves relay-substituted execution-bearing fields unchecked.",
+    "page": 8,
+    "method": "pdf_in_text_numeric_citation",
+    "reference_marker": "1",
+    "title": "When Alignment Isn't Enough: Response-Path Attacks on LLM Agents",
+    "source_url": "https://doi.org/10.48550/arXiv.2605.02187"
+  },
+  "f647850aee125ce988d83f37c6107011a8a5356f": {
+    "excerpt": "insic mechanisms include finetuning or RLHF training on an LLM (Bianchi et al., 2024; Chen et al., 2024a; Yuan et al., 2024b; Ouyang et al., 2022b; Bai et al., 2022; Dai et al., 2023). Extrinsic safety mechanisms utilize external models to detect harmful inputs and responses; these models can either be simple filters or use guard models. Jain et al. (2023); Alon and Kamfonas (2023); Hu et al. (2024) propose using perplexity filtering for detecting harmful prompts. Guard models defend LLMs by training separate LLMs to detect harmful text (see Table 2). Separately, a line of work has introduced interpretability methods to transparently expose safety concerns in LLMs (Bereska and Gavves, 2024; Singh et al., 2023; Arditi et al., 20",
+    "page": 9,
+    "method": "pdf_in_text_author_citation",
+    "title": "OMNIGUARD: An Efficient Approach for AI Safety Moderation Across Modalities",
+    "source_url": "https://doi.org/10.48550/arXiv.2505.23856"
+  },
+  "1407eb733d014dc6a8ccb91352b0af6aeab5e496": {
+    "excerpt": "raints constitute one of the most pressing challenges to reliable deployment of LLMs (Chao et al., 2024; Zeng et al., 2024; Chao et al., 2023). In response, substantial efforts have been dedicated to aligning the models with human-defined ethics and safety standards, such as perplexity-based filtering and paraphrasing-based sanitization (Welbl et al., 2021; Alon and Kamfonas, 2023; Jain et al., 2023a), as well as reinforcement learning from human feedback (RLHF) (Stiennon et al., 2020; Ouyang et al., 2022; Bai et al., 2022a). Despite these safeguards, LLMs continue to exhibit vulnerability to adversarial exploitation (Wei et al., 2023; Chao et al., 2024). A growing body of work investigates how the safety mechanisms of LLMs can",
+    "page": 1,
+    "method": "pdf_in_text_author_citation",
+    "title": "Beneath the Facade: Probing Safety Vulnerabilities in LLMs via Auto-Generated Jailbreak Prompts",
+    "source_url": "https://doi.org/10.18653/v1/2025.findings-emnlp.960"
+  },
+  "e0450107477cb64928c4972e6f0cb8da6e2b0ed9": {
+    "excerpt": "Detecting language model attacks with perplexity.CoRR, abs/2308.14132, 2023.",
+    "page": 16,
+    "method": "pdf_bibliography_entry_only",
+    "title": "Immunity memory-based jailbreak detection: multi-agent adaptive guard for large language models",
+    "source_url": "https://doi.org/10.48550/arXiv.2512.03356"
+  },
+  "5c204b2421d05b83d3c96a6c515cc03143073935": {
+    "excerpt": "Kamfonas, “Detecting language model attacks with perplexity,”arXiv, 2023.",
+    "page": 16,
+    "method": "pdf_bibliography_entry_only",
+    "title": "PoisonedRAG: Knowledge Poisoning Attacks to Retrieval-Augmented Generation of Large Language Models",
+    "source_url": "https://doi.org/10.48550/arXiv.2402.07867"
+  },
+  "2294e237aa46d3bb34f71d224a6da9bdf061329b": {
+    "excerpt": "A branch of them mainly concentrates on controlling the content that LLMs can see by pre-processing user inputs, such as perplexity filtering (Alon and Kamfonas, 2023;",
+    "page": 2,
+    "method": "pdf_in_text_author_citation",
+    "title": "Intention Analysis Prompting Makes Large Language Models A Good Jailbreak Defender",
+    "source_url": "https://doi.org/10.48550/arXiv.2401.06561"
+  }
+}

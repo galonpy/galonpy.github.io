@@ -9,6 +9,13 @@ nav_order: 3
 <!-- _pages/publications.md -->
 <div class="publications">
 
+<section class="publication-backstory" aria-labelledby="publication-backstory-title">
+  <h2 id="publication-backstory-title">Backstory</h2>
+  <p>
+    I read in the news that there was a groundbreaking hack targeting OpenAI’s ChatGPT and Google’s LLMs. This call to action motivated me to publish a practical method for evaluating the safety of LLM systems that has become foundational in the field of AI Safety.
+  </p>
+</section>
+
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>

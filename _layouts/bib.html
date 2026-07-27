@@ -152,13 +152,34 @@
               <span class="research-use-links">
                 {% for organization in research_use.companies %}
                   <a
+                    class="research-use-link{% if forloop.index > 4 %} is-overflow{% endif %}"
                     href="{{ organization.url }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="{{ organization.name }} citing paper: {{ organization.paper }}"
-                    title="Citing paper: {{ organization.paper }}"
-                  >{{ organization.name }}</a>
+                    aria-label="{{ organization.name }} citing paper: {{ organization.paper }}.{% if organization.citation_page %} Citation on page {{ organization.citation_page }}.{% endif %}"
+                  >
+                    {{ organization.name }}
+                    <span class="research-use-tooltip" role="tooltip">
+                      <span class="research-use-tooltip-title">{{ organization.paper }}</span>
+                      <span class="research-use-tooltip-page">
+                        {% if organization.citation_page %}Citation page {{ organization.citation_page }}{% else %}Verified citation excerpt{% endif %}
+                      </span>
+                      <q>{{ organization.excerpt }}</q>
+                      <span class="research-use-tooltip-hint">Click to open the paper from page 1</span>
+                    </span>
+                  </a>
                 {% endfor %}
+                {% if research_use.companies.size > 4 %}
+                  <button
+                    class="research-use-more-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    data-more-count="{{ research_use.companies.size | minus: 4 }}"
+                  >
+                    <span class="research-use-more-label">More</span>
+                    <span class="research-use-more-count">+{{ research_use.companies.size | minus: 4 }}</span>
+                  </button>
+                {% endif %}
               </span>
             </div>
             {% endif %}
@@ -168,14 +189,56 @@
               <span class="research-use-links">
                 {% for organization in research_use.universities %}
                   <a
+                    class="research-use-link{% if forloop.index > 4 %} is-overflow{% endif %}"
                     href="{{ organization.url }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="{{ organization.name }} citing paper: {{ organization.paper }}"
-                    title="Citing paper: {{ organization.paper }}"
-                  >{{ organization.name }}</a>
+                    aria-label="{{ organization.name }} citing paper: {{ organization.paper }}.{% if organization.citation_page %} Citation on page {{ organization.citation_page }}.{% endif %}"
+                  >
+                    {{ organization.name }}
+                    <span class="research-use-tooltip" role="tooltip">
+                      <span class="research-use-tooltip-title">{{ organization.paper }}</span>
+                      <span class="research-use-tooltip-page">
+                        {% if organization.citation_page %}Citation page {{ organization.citation_page }}{% else %}Verified citation excerpt{% endif %}
+                      </span>
+                      <q>{{ organization.excerpt }}</q>
+                      <span class="research-use-tooltip-hint">Click to open the paper from page 1</span>
+                    </span>
+                  </a>
                 {% endfor %}
+                {% if research_use.universities.size > 4 %}
+                  <button
+                    class="research-use-more-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    data-more-count="{{ research_use.universities.size | minus: 4 }}"
+                  >
+                    <span class="research-use-more-label">More</span>
+                    <span class="research-use-more-count">+{{ research_use.universities.size | minus: 4 }}</span>
+                  </button>
+                {% endif %}
               </span>
+            </div>
+            {% endif %}
+            {% assign citation_excerpt_summary = site.data.citation_excerpt_summary[entry.key] %}
+            {% if citation_excerpt_summary %}
+            <div class="citation-excerpts" data-citation-key="{{ entry.key }}">
+              <button
+                class="citation-excerpts-toggle"
+                type="button"
+                aria-expanded="false"
+                data-source="{{ citation_excerpt_summary.url | relative_url }}"
+              >
+                <span>More citation excerpts</span>
+                <span class="citation-excerpts-count">{{ citation_excerpt_summary.count }}</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="citation-excerpts-panel" hidden>
+                <p class="citation-excerpts-intro">
+                  Every reviewed citing paper for which a citation excerpt is available.
+                </p>
+                <div class="citation-excerpts-list" role="list"></div>
+              </div>
             </div>
             {% endif %}
           </div>
@@ -198,7 +261,7 @@
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
           {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">Web Link</a>
+            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">Web Publication</a>
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}

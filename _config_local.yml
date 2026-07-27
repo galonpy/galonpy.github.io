@@ -8,3 +8,6 @@ exclude:
 
 imagemagick:
   enabled: false
+
+# Avoid network-dependent blog imports during local development.
+external_sources: []

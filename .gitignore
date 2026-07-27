@@ -9,3 +9,7 @@ _site
 Gemfile.lock
 vendor
 TODO_IDEAS.md
+.env.semantic-scholar
+tmp/
+__pycache__/
+*.pyc

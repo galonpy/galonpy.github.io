@@ -110,6 +110,14 @@ def main() -> int:
                         matched_name = match.group(0)
                         excerpt = evidence_excerpt(text, match)
                         status = "verified_exception"
+                elif basis == "workshop_organizer":
+                    match = re.search(
+                        r"co-organized by Stanford University", text, re.IGNORECASE
+                    )
+                    if match:
+                        matched_name = match.group(0)
+                        excerpt = evidence_excerpt(text, match)
+                        status = "verified_exception"
 
             row = {
                 "group": group,

@@ -8,4 +8,8 @@ _site
 .tweet-cache
 Gemfile.lock
 vendor
-
+TODO_IDEAS.md
+.env.semantic-scholar
+tmp/
+__pycache__/
+*.pyc

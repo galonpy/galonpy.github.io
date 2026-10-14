@@ -1,0 +1,13 @@
+# Local development overrides for optional tools not installed on this Mac.
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - assets/jupyter
+
+imagemagick:
+  enabled: false
+
+# Avoid network-dependent blog imports during local development.
+external_sources: []

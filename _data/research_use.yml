@@ -1,0 +1,207 @@
+llmattacks:
+  companies:
+    - name: Google DeepMind
+      paper: Prompts Generalize with Low Data
+      url: https://arxiv.org/pdf/2510.08413#page=1
+      citation_page: 4
+      excerpt: Perplexity is also a widely-used metric that has a wide range of applications, such as detecting adversarial attacks [Alon and Kamfonas, 2023].
+    - name: Microsoft
+      paper: "Highlight & Summarize: RAG without the Jailbreaks"
+      url: https://arxiv.org/pdf/2508.02872#page=1
+      citation_page: 14
+      excerpt: Gabriel Alon and Michael Kamfonas. Detecting language model attacks with perplexity, 2023.
+    - name: IBM Research
+      paper: "Attention Tracker: Detecting Prompt Injection Attacks in LLMs"
+      url: https://aclanthology.org/2025.findings-naacl.123.pdf#page=1
+      citation_page: 3
+      excerpt: Prompt injection attacks are detected using techniques including PPL detection (Alon and Kamfonas, 2023).
+    - name: Bloomberg
+      paper: Operationalizing a Threat Model for Red-Teaming LLMs
+      url: https://arxiv.org/pdf/2407.14937#page=1
+      citation_page: 22
+      excerpt: Perplexity filtering is another simple defense against adversarial suffixes obtained by optimization (Alon & Kamfonas, 2023).
+    - name: Sony AI
+      paper: "JailbreakBench: An Open Robustness Benchmark"
+      url: https://proceedings.neurips.cc/paper_files/paper/2024/file/63092d79154adebd7305dfd498cbff70-Paper-Datasets_and_Benchmarks_Track.pdf#page=1
+      citation_page: 3
+      excerpt: Perplexity filtering defines wrappers around LLMs to detect potential jailbreaks (Alon and Kamfonas, 2023).
+    - name: Adobe Research
+      paper: Token-Level Adversarial Prompt Detection Based on Perplexity Measures and Contextual Information
+      url: https://arxiv.org/pdf/2311.11509#page=1
+      citation_page: 8
+      excerpt: Several studies [4, 1] have explored this idea to identify sequences containing adversarial prompts.
+    - name: Allen Institute for AI
+      paper: "SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding"
+      url: https://arxiv.org/pdf/2402.08983#page=1
+      citation_page: 3
+      excerpt: Alon and Kamfonas (2023) use input perplexity as a detection mechanism to defend against optimization-based attacks.
+    - name: Baidu
+      paper: "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking"
+      url: https://arxiv.org/pdf/2502.12970#page=1
+      citation_page: 2
+      excerpt: External detection uses perplexity filtering (Jain et al., 2023; Alon and Kamfonas, 2023) to discover potential jailbreaking risks.
+    - name: Sea AI Lab
+      paper: Improved Few-Shot Jailbreaking Can Circumvent Aligned Language Models and Their Defenses
+      url: https://arxiv.org/pdf/2406.01288#page=1
+      citation_page: 18
+      excerpt: We follow Alon and Kamfonas [1] and use GPT-2 to calculate the perplexity.
+    - name: Samsung R&D
+      paper: "LoRA-Guard: Parameter-Efficient Guardrail Adaptation for Content Moderation of Large Language Models"
+      url: https://arxiv.org/pdf/2407.02987#page=1
+      citation_page: 8
+      excerpt: Perplexity-based filters detect jailbreaks built from out-of-distribution text (Jain et al., 2023; Alon and Kamfonas, 2023).
+    - name: Center for AI Safety
+      paper: Improving Alignment and Robustness with Circuit Breakers
+      url: https://arxiv.org/pdf/2406.04313#page=1
+      excerpt: Inference-time defenses, such as perplexity filters [1, 26], are effective only against non-adaptive attacks [36], while erase-and-check and SmoothLLM [56] incur high computational costs.
+    - name: Lapis Labs
+      paper: "GUARD: Role-playing to Generate Natural-language Jailbreakings"
+      url: https://arxiv.org/pdf/2402.03299#page=1
+      excerpt: These features include detecting malicious queries with natural language filters (Alon and Kamfonas, 2023), using self-reminded prompts to force LLMs to reconsider queries, and halting responses when potential malicious content is detected.
+    - name: Microsoft Corporation
+      paper: "SecurityLingua: Efficient Defense of LLM Jailbreak Attacks via Security-Aware Prompt Compression"
+      url: https://arxiv.org/pdf/2506.12707#page=1
+      excerpt: Extra auditing mechanisms are utilized to monitor and filter potentially harmful outputs before delivering them to the user (Jain et al., 2023; Alon & Kamfonas, 2023).
+    - name: Shanghai Artificial Intelligence Laboratory
+      paper: "LLMs Know Their Vulnerabilities: Uncover Safety Gaps through Natural Distribution Shifts"
+      url: https://arxiv.org/pdf/2410.10700#page=1
+      excerpt: Input and output guardrails involve input perturbation, safety decoding, and jail-break detection (Alon and Kamfonas, 2023; Jain et al., 2023).
+    - name: International Digital Economy Academy (IDEA)
+      paper: "Guide for Defense: Dynamic Guidance for Robust and Balanced Defense in Large Language Models"
+      url: https://arxiv.org/pdf/2410.17922#page=1
+      excerpt: Inference-stage defenses mitigate risks before model responses by pre-processing inputs (Alon and Kamfonas, 2023).
+  universities:
+    - name: University of Chicago
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=1
+      citation_page: 9
+      excerpt: Perplexity Filter [2] is often used to prevent LLMs from injection attacks.
+    - name: UC Berkeley
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=1
+      citation_page: 9
+      excerpt: Perplexity Filter [2] is often used to prevent LLMs from injection attacks.
+    - name: University of Pennsylvania
+      paper: Jailbreaking Black Box LLMs in Twenty Queries
+      url: https://arxiv.org/pdf/2310.08419#page=1
+      citation_page: 7
+      excerpt: PAIR is evaluated against two jailbreaking defenses, including a perplexity filter [37, 38].
+    - name: Stanford University
+      paper: Identifying and Mitigating the Security Risks of Generative AI
+      url: https://arxiv.org/pdf/2308.14840#page=1
+      citation_page: 20
+      evidence_basis: workshop_organizer
+      excerpt: Follow-up work to detect such safety attacks was also demonstrated on open-source models (Alon and Kamfonas, 2023).
+    - name: Carnegie Mellon
+      paper: Improving Alignment and Robustness with Circuit Breakers
+      url: https://arxiv.org/pdf/2406.04313#page=1
+      citation_page: 4
+      excerpt: Inference-time defenses, such as perplexity filters [1, 26], are effective only against non-adaptive attacks.
+    - name: MIT
+      paper: A Theoretical Understanding of Self-Correction
+      url: https://arxiv.org/pdf/2405.18634#page=1
+      citation_page: 18
+      excerpt: One direct solution is to detect or purify harmful prompts with preprocessing, such as a perplexity filter [4].
+    - name: Harvard
+      paper: Operationalizing a Threat Model for Red-Teaming LLMs
+      url: https://arxiv.org/pdf/2407.14937#page=1
+      citation_page: 22
+      excerpt: Perplexity filtering is another simple defense against adversarial suffixes obtained by optimization (Alon & Kamfonas, 2023).
+    - name: UCLA
+      paper: Defending LLMs Against Jailbreaking via Backtranslation
+      url: https://aclanthology.org/2024.findings-acl.948.pdf#page=1
+      citation_page: 2
+      excerpt: Detection-based methods reject adversarial prompts using a perplexity filter (Alon and Kamfonas, 2023).
+    - name: University of Illinois, Urbana-Champaign
+      paper: "AgentPoison: Red-Teaming LLM Agents"
+      url: https://arxiv.org/pdf/2407.12784#page=1
+      citation_page: 9
+      excerpt: Perplexity Filter [2] is often used to prevent LLMs from injection attacks.
+    - name: ETH Zurich
+      paper: "JailbreakBench: An Open Robustness Benchmark"
+      url: https://proceedings.neurips.cc/paper_files/paper/2024/file/63092d79154adebd7305dfd498cbff70-Paper-Datasets_and_Benchmarks_Track.pdf#page=1
+      citation_page: 3
+      excerpt: Perplexity filtering defines wrappers around LLMs to detect potential jailbreaks (Alon and Kamfonas, 2023).
+    - name: University of Washington
+      paper: "SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding"
+      url: https://arxiv.org/pdf/2402.08983#page=1
+      citation_page: 3
+      excerpt: Alon and Kamfonas (2023) use input perplexity as a detection mechanism to defend against optimization-based attacks.
+    - name: Duke University
+      paper: "PIShield: Detecting Prompt Injection Attacks via Intrinsic LLM Features"
+      url: https://arxiv.org/pdf/2510.14005#page=1
+      citation_page: 10
+      excerpt: Gabriel Alon and Michael Kamfonas. Detecting language model attacks with perplexity. arXiv, 2023.
+    - name: Pennsylvania State University
+      paper: "PIShield: Detecting Prompt Injection Attacks via Intrinsic LLM Features"
+      url: https://arxiv.org/pdf/2510.14005#page=1
+      citation_page: 10
+      excerpt: Gabriel Alon and Michael Kamfonas. Detecting language model attacks with perplexity. arXiv, 2023.
+    - name: Yale University
+      paper: Test-Time Safety Alignment
+      url: https://arxiv.org/pdf/2604.26167#page=1
+      citation_page: 2
+      excerpt: Detection signals can come directly from the target model, such as perplexity-based filtering [3].
+    - name: Columbia University
+      paper: Proactive Defense Against LLM Jailbreak
+      url: https://arxiv.org/pdf/2510.05052#page=1
+      citation_page: 2
+      excerpt: Input/output filters identify and eliminate harmful user queries (Jain et al., 2023; Alon & Kamfonas, 2023).
+    - name: University of Maryland
+      paper: Token-Level Adversarial Prompt Detection Based on Perplexity Measures and Contextual Information
+      url: https://arxiv.org/pdf/2311.11509#page=1
+      citation_page: 8
+      excerpt: Several studies [4, 1] have explored this idea to identify sequences containing adversarial prompts.
+    - name: Singapore Management University
+      paper: Improved Few-Shot Jailbreaking Can Circumvent Aligned Language Models and Their Defenses
+      url: https://arxiv.org/pdf/2406.01288#page=1
+      citation_page: 18
+      excerpt: We follow Alon and Kamfonas [1] and use GPT-2 to calculate the perplexity.
+    - name: Peking University
+      paper: "RACC: Representation-Aware Coverage Criteria for LLM Safety Testing"
+      url: https://arxiv.org/pdf/2602.02280#page=1
+      excerpt: Jailbreak attacks [12, 19, 20, 72, 84] continue to circumvent these safety measures, and defensive mechanisms [2, 27, 33, 43, 46, 74, 78, 82] have not fully resolved the problem.
+    - name: Hong Kong University of Science and Technology
+      paper: "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails"
+      url: https://arxiv.org/pdf/2606.14517#page=1
+      excerpt: Optimized adversarial strings are model-specific, easy to expose with perplexity-style filters [40], [41], and still enter the guardrail as content to evaluate rather than instructions to execute.
+    - name: New York University
+      paper: "Think Twice, Generate Once: Safeguarding by Progressive Self-Reflection"
+      url: https://arxiv.org/pdf/2510.01270#page=1
+      excerpt: Current strategies for mitigating such risks include prompt engineering, detection-based methods (Alon and Kamfonas, 2023), and fine-tuning with curated datasets.
+    - name: Texas A&M University
+      paper: "LiteLMGuard: Seamless and Lightweight On-Device Prompt Filtering"
+      url: https://arxiv.org/pdf/2505.05619#page=1
+      excerpt: Building upon the work of Jain et al. (2023), Alon and Kamfonas (2023) proposed a classifier.
+    - name: The Ohio State University
+      paper: Dynamic Guided and Domain Applicable Safeguards for Enhanced Security in Large Language Models
+      url: https://aclanthology.org/2025.findings-naacl.368.pdf#page=1
+      excerpt: Inference-stage defenses mitigate risks before model responses by pre-processing inputs (Alon and Kamfonas, 2023; Cao et al., 2024; Jain et al., 2023) or guiding model behavior.
+    - name: University of Michigan
+      paper: Dual Debiasing for Noisy In-Context Learning for Text Generation
+      url: https://arxiv.org/pdf/2506.00418#page=1
+      excerpt: The correct annotation is more likely than the noised, out-of-distribution one when conditioned on the same query (Alon and Kamfonas, 2023).
+    - name: Arizona State University
+      paper: "The Art of Defending: A Systematic Evaluation of LLM Defense Strategies"
+      url: https://arxiv.org/pdf/2401.00287#page=1
+      excerpt: Alon and Kamfonas (2023) study LLM exploitation via adversarial suffixes.
+    - name: Fudan University
+      paper: "SafeAligner: Safety Alignment against Jailbreak Attacks via Response Disparity Guidance"
+      url: https://arxiv.org/pdf/2406.18118#page=1
+      excerpt: The Perplexity-based Protection Layer proposed by Alon and Kamfonas (2023) identifies adversarial suffix attacks by analyzing the perplexity of the input token sequence.
+    - name: The University of Melbourne
+      paper: Geometry-Guided Adversarial Prompt Detection via Curvature and Local Intrinsic Dimension
+      url: https://arxiv.org/pdf/2503.03502#page=1
+      excerpt: We also experimented with defences including perplexity-based filtering (Alon & Kamfonas, 2023).
+    - name: Seoul National University
+      paper: What Really Matters in Many-Shot Attacks?
+      url: https://arxiv.org/pdf/2505.19773#page=1
+      excerpt: Prompt-level defenses include prompt detection (Alon and Kamfonas, 2023; Jain et al., 2023), perturbations, and system prompt safeguards.
+    - name: University of Minnesota
+      paper: A Survey of Attacks on Large Language Models
+      url: https://arxiv.org/pdf/2505.12567#page=1
+      excerpt: The adversarial perplexity loss is proposed to bypass defense mechanisms based on perplexity detection [72], which identifies prompt injection attacks by analyzing log-perplexity.
+    - name: University of Waterloo
+      paper: RAIN
+      url: https://arxiv.org/pdf/2309.07124#page=1
+      excerpt: Some approaches can detect and defend against this attack through metrics such as perplexity (Alon & Kamfonas, 2023).

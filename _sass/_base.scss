@@ -551,6 +551,26 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
+  .publication-backstory {
+    background: var(--global-card-bg-color);
+    border-left: 3px solid var(--global-theme-color);
+    border-radius: 0.45rem;
+    margin: 0 0 2rem;
+    padding: 1rem 1.1rem;
+
+    h2 {
+      color: var(--global-theme-color);
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.45rem;
+    }
+
+    p {
+      line-height: 1.65;
+      margin: 0;
+    }
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -617,6 +637,32 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+
+        .citation-count {
+          border: 1px solid var(--global-theme-color);
+          border-radius: 999px;
+          color: var(--global-theme-color);
+          display: inline-block;
+          font-size: 0.7rem;
+          font-weight: 500;
+          line-height: 1;
+          margin-left: 0.4rem;
+          padding: 0.25rem 0.45rem;
+          text-decoration: none;
+          vertical-align: 0.1rem;
+          white-space: nowrap;
+
+          &:hover,
+          &:focus-visible {
+            background: var(--global-theme-color);
+            color: var(--global-bg-color);
+          }
+
+          &:focus-visible {
+            outline: 2px solid var(--global-theme-color);
+            outline-offset: 2px;
+          }
+        }
       }
 
       .author {
@@ -646,6 +692,301 @@ footer.sticky-bottom {
         }
       }
 
+      .research-use {
+        background: var(--global-card-bg-color);
+        border-left: 3px solid var(--global-theme-color);
+        border-radius: 0.45rem;
+        display: grid;
+        gap: 0.45rem;
+        margin: 0.45rem 0 0.7rem;
+        padding: 0.65rem 0.75rem;
+
+        .research-use-heading {
+          align-items: center;
+          color: var(--global-text-color);
+          display: flex;
+          font-size: 0.78rem;
+          font-weight: 600;
+          gap: 0.4rem;
+
+          i {
+            color: var(--global-theme-color);
+            font-size: 0.7rem;
+          }
+        }
+
+        .research-use-row {
+          align-items: baseline;
+          display: grid;
+          gap: 0.35rem 0.65rem;
+          grid-template-columns: 5.25rem minmax(0, 1fr);
+        }
+
+        .research-use-label {
+          color: var(--global-text-color-light);
+          font-size: 0.68rem;
+          font-weight: 600;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        .research-use-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.3rem;
+
+          a {
+            border: 1px solid var(--global-text-color-light);
+            border-radius: 999px;
+            color: var(--global-text-color);
+            font-size: 0.7rem;
+            line-height: 1;
+            padding: 0.3rem 0.45rem;
+            position: relative;
+            text-decoration: none;
+            transition:
+              border-color 0.15s ease,
+              color 0.15s ease,
+              transform 0.15s ease;
+
+            &:hover,
+            &:focus-visible {
+              border-color: var(--global-theme-color);
+              color: var(--global-theme-color);
+              transform: translateY(-1px);
+            }
+
+            &:hover .research-use-tooltip,
+            &:focus-visible .research-use-tooltip {
+              opacity: 1;
+              pointer-events: auto;
+              transform: translate(-50%, 0);
+              visibility: visible;
+            }
+          }
+
+          > .research-use-link.is-overflow {
+            display: none;
+          }
+
+          &.expanded > .research-use-link.is-overflow {
+            display: inline-block;
+          }
+
+          .research-use-more-toggle {
+            background: transparent;
+            border: 1px dashed var(--global-theme-color);
+            border-radius: 999px;
+            color: var(--global-theme-color);
+            cursor: pointer;
+            font-size: 0.7rem;
+            line-height: 1;
+            padding: 0.3rem 0.5rem;
+            transition:
+              background-color 0.15s ease,
+              color 0.15s ease,
+              transform 0.15s ease;
+
+            &:hover,
+            &:focus-visible {
+              background: var(--global-theme-color);
+              color: var(--global-bg-color);
+              transform: translateY(-1px);
+            }
+
+            &:focus-visible {
+              outline: 2px solid var(--global-theme-color);
+              outline-offset: 2px;
+            }
+
+            .research-use-more-count {
+              margin-left: 0.15rem;
+              opacity: 0.75;
+            }
+          }
+
+          .research-use-tooltip {
+            background: var(--global-text-color);
+            border-radius: 0.5rem;
+            bottom: calc(100% + 0.55rem);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            color: var(--global-bg-color);
+            display: grid;
+            font-size: 0.7rem;
+            gap: 0.35rem;
+            left: 50%;
+            line-height: 1.4;
+            max-width: calc(100vw - 2rem);
+            opacity: 0;
+            padding: 0.7rem 0.75rem;
+            pointer-events: none;
+            position: absolute;
+            text-align: left;
+            transform: translate(-50%, 0.25rem);
+            transition:
+              opacity 0.15s ease,
+              transform 0.15s ease,
+              visibility 0.15s ease;
+            visibility: hidden;
+            width: 19rem;
+            z-index: 20;
+
+            &::after {
+              border-left: 0.4rem solid transparent;
+              border-right: 0.4rem solid transparent;
+              border-top: 0.4rem solid var(--global-text-color);
+              content: "";
+              left: 50%;
+              position: absolute;
+              top: 100%;
+              transform: translateX(-50%);
+            }
+
+            .research-use-tooltip-title {
+              font-weight: 600;
+            }
+
+            .research-use-tooltip-page {
+              color: var(--global-theme-color);
+              font-size: 0.65rem;
+              font-weight: 600;
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+            }
+
+            q {
+              color: var(--global-bg-color);
+              font-style: italic;
+            }
+
+            .research-use-tooltip-hint {
+              border-top: 1px solid rgba(255, 255, 255, 0.2);
+              font-size: 0.62rem;
+              opacity: 0.75;
+              padding-top: 0.35rem;
+            }
+          }
+        }
+
+        .citation-excerpts {
+          border-top: 1px solid var(--global-divider-color);
+          margin-top: 0.7rem;
+          padding-top: 0.65rem;
+        }
+
+        .citation-excerpts-toggle {
+          align-items: center;
+          background: transparent;
+          border: 0;
+          color: var(--global-theme-color);
+          cursor: pointer;
+          display: inline-flex;
+          font-size: 0.72rem;
+          font-weight: 600;
+          gap: 0.4rem;
+          padding: 0;
+
+          i {
+            font-size: 0.62rem;
+            transition: transform 0.2s ease;
+          }
+
+          &[aria-expanded="true"] i {
+            transform: rotate(180deg);
+          }
+        }
+
+        .citation-excerpts-count {
+          background: var(--global-theme-color);
+          border-radius: 999px;
+          color: var(--global-bg-color);
+          font-size: 0.62rem;
+          padding: 0.12rem 0.4rem;
+        }
+
+        .citation-excerpts-intro {
+          color: var(--global-text-color-light);
+          font-size: 0.68rem;
+          margin: 0.65rem 0 0.5rem;
+        }
+
+        .citation-excerpts-list {
+          display: grid;
+          gap: 0.45rem;
+          max-height: 32rem;
+          overflow-y: auto;
+          padding-right: 0.35rem;
+        }
+
+        .citation-excerpt {
+          background: var(--global-card-bg-color);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 0.55rem;
+          color: var(--global-text-color);
+          display: grid;
+          font-size: 0.68rem;
+          gap: 0.25rem;
+          line-height: 1.45;
+          padding: 0.65rem 0.7rem;
+          text-decoration: none;
+
+          &:hover,
+          &:focus-visible {
+            border-color: var(--global-theme-color);
+            color: var(--global-text-color);
+          }
+
+          q {
+            color: var(--global-text-color);
+            font-style: italic;
+          }
+        }
+
+        .citation-excerpt-heading {
+          align-items: baseline;
+          display: flex;
+          gap: 0.5rem;
+          justify-content: space-between;
+        }
+
+        .citation-excerpt-title {
+          font-size: 0.72rem;
+          font-weight: 600;
+        }
+
+        .citation-excerpt-year,
+        .citation-excerpt-authors {
+          color: var(--global-text-color-light);
+        }
+
+        .citation-excerpt-source {
+          color: var(--global-theme-color);
+          font-size: 0.63rem;
+          font-weight: 600;
+        }
+
+        .citation-excerpt-footer {
+          align-items: end;
+          display: flex;
+          gap: 0.6rem;
+          justify-content: space-between;
+        }
+
+        .citation-excerpt-organizations {
+          color: var(--global-theme-color);
+          font-size: 0.63rem;
+          font-weight: 700;
+          margin-left: auto;
+          text-align: right;
+        }
+
+        @media (max-width: 575px) {
+          .research-use-row {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+
       .links {
         a.btn {
           color: var(--global-text-color);
@@ -659,6 +1000,76 @@ footer.sticky-bottom {
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
+          }
+        }
+
+        .abstract-toggle {
+          align-items: center;
+          background: var(--global-card-bg-color);
+          border: 1px solid var(--global-text-color-light);
+          border-radius: 999px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+          color: var(--global-text-color);
+          display: inline-flex;
+          font-size: 0.75rem;
+          font-weight: 500;
+          gap: 0.5rem;
+          height: 2rem;
+          justify-content: center;
+          letter-spacing: 0.01em;
+          margin-left: 0;
+          padding: 0 0.85rem;
+          transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease,
+            color 0.2s ease,
+            transform 0.2s ease;
+          vertical-align: middle;
+          width: auto;
+
+          span {
+            line-height: 1;
+          }
+
+          i {
+            font-size: 0.7rem;
+            transition: transform 0.2s ease;
+          }
+
+          &:hover,
+          &:focus-visible {
+            background: var(--global-card-bg-color);
+            border-color: var(--global-theme-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: var(--global-theme-color);
+            transform: translateY(-1px);
+          }
+
+          &:active {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transform: translateY(0);
+          }
+
+          &:focus-visible {
+            box-shadow: 0 0 0 2px var(--global-bg-color), 0 0 0 4px var(--global-theme-color);
+            outline: none;
+          }
+
+          &.open {
+            background: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+            color: var(--global-bg-color);
+
+            i {
+              transform: rotate(180deg);
+            }
+
+            &:hover,
+            &:focus-visible {
+              background: var(--global-theme-color);
+              color: var(--global-bg-color);
+            }
           }
         }
       }
@@ -711,11 +1122,40 @@ footer.sticky-bottom {
       }
 
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        background: var(--global-card-bg-color);
+        border: 1px solid transparent;
+        border-left: 3px solid transparent;
+        border-radius: 0.6rem;
+        box-shadow: none;
+        margin-top: 0;
+        opacity: 0;
+        padding: 0 1rem;
+        transform: translateY(-0.25rem);
+        transition:
+          max-height 0.3s ease,
+          opacity 0.2s ease,
+          transform 0.2s ease,
+          padding 0.3s ease,
+          margin 0.3s ease,
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+
+        p {
+          color: var(--global-text-color);
+          line-height: 1.6;
+          margin: 0;
+          text-align: left;
+        }
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        border-color: var(--global-bg-color);
+        border-left-color: var(--global-theme-color);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        margin-top: 0.75rem;
+        opacity: 1;
+        padding: 0.9rem 1rem;
+        transform: translateY(0);
       }
     }
   }

@@ -4,7 +4,7 @@ llmattacks:
       paper: Prompts Generalize with Low Data
       url: https://arxiv.org/pdf/2510.08413#page=1
       citation_page: 4
-      excerpt: Perplexity is also a widely-used metric that has a wide range of applications, such as detecting adversarial attacks [Alon and Kamfonas, 2023].
+      excerpt: Perplexity is also a widely-used metric that has a wide range of applications, such as detecting adversarial attacks [Alon and Kamfonas, 2023] …
     - name: Microsoft
       paper: "Highlight & Summarize: RAG without the Jailbreaks"
       url: https://arxiv.org/pdf/2508.02872#page=1
